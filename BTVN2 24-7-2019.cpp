@@ -25,8 +25,7 @@ int main(){
 	}
 
 	
-	printf("So nho nhat la %d\n",min);
+	printf("\nSo nho nhat la %d\n",min);
 	printf("So lon nhat la %d\n",max);
 return 0;	
 }
-
