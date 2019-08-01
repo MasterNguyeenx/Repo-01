@@ -1,23 +1,18 @@
 #include<stdio.h>
-int thuannghich(int i ) {
- 
-	int the = i ; 
-	int dao = 0 ; 
-	
-	while(i>0){
-	dao = dao*10 + the%10 ;
- 	i/=10;
- 	}
- 	return(the==dao);
-}
+
 int main(){
-	int n;
+	int n,dao,the;
 	scanf("%d",&n);
- 	
-	 for(int i = 0 ; i < n ; i++){
- 		if(thuannghich(i))
- 		printf("%10d", i );
- 	}
- 
- 	return 0 ; 
-}
+	
+	for(int i = 1; i<n ; ++i){
+		dao=0;
+		the=i;
+		while(the!=0){
+			dao=dao*10+the%10;
+			the=the/10;
+		}
+		if(dao==i){
+			printf("%d\n",i);
+		}	
+		}
+	}
