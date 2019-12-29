@@ -2,6 +2,7 @@
 
 int main(){
 	int n,dao,the;
+	printf("Nhap n:\n");
 	scanf("%d",&n);
 	
 	for(int i = 1; i<n ; ++i){
@@ -12,7 +13,7 @@ int main(){
 			the=the/10;
 		}
 		if(dao==i){
-			printf("%d\n",i);
+			printf("%10d",i);
 		}	
 		}
 	}

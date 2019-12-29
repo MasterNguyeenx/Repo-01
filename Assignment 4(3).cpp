@@ -12,7 +12,7 @@ int main(){
 		dao=dao*10 + tam%10;
 		tam=tam/10;
 	}
-	if(dao==a){
+	if(dao==a && a>=10){
 		printf("%d la mot so nghich thuan",a);
 	}else{
 		printf("%d khong phai la mot so nghich thuan",a);

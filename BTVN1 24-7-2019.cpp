@@ -10,7 +10,11 @@ int main(){
 	scanf("%d",&y);
 	
 	if(x>y){
+		if(y!=0){
+			printf("Khong the chia het cho 0\n");
+		}else{
 		printf("Thuong cua %d va %d la: %d\n",x,y,x/y);
+		}
 	}else{
 		printf("Tich cua %d va %d la: %d\n",x,y,x*y);
 	}
